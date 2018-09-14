@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/accent_material_dark"
+        android:elevation="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="fill_parent"
+                android:layout_gravity="center"
+                android:layout_height="200sp"
+                android:id="@+id/Imageview" />
+        <!--IF not working remove the listview below-->
+            <LinearLayout
+                android:id="@+id/ListLinearLayout"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+            <!--LISTVIEW COMES HERE AN BUTTONS-->
+            </LinearLayout>
+            <GridLayout
+                android:id="@+id/viewLayout"
+                android:rowCount="3"
+                android:columnCount="2"
+                android:layout_gravity="center"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:columnOrderPreserved="true" />
+        </LinearLayout>
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_height="match_parent"
+            android:layout_width="300dp"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true" />
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_rightview"
+            android:layout_height="match_parent"
+            android:layout_width="300dp"
+            android:layout_gravity="end"
+            android:fitsSystemWindows="true">
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@color/material_grey_100"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/Signin_button"
+                    android:textColor="#FFFFFF"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Place Holder" />
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:id="@+id/LoginLayout"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:clickable="true"
+                        android:id="@+id/MessageTextView"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:clickable="true"
+                        android:id="@+id/SessaionNotesTextView"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:clickable="true"
+                        android:id="@+id/UserNoteTextView"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:clickable="true"
+                        android:id="@+id/NOtificationsTextView"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:clickable="true"
+                        android:id="@+id/MyAgendaTextView"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:clickable="true"
+                        android:id="@+id/BuisnesscardTextView"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash1"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:text="Ange din eventkod:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_Placeholder"
+        android:textColor="@color/Orange" />
+    <EditText
+        android:maxLength="9999"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="Skrin in här"
+        android:id="@+id/Input_Edittext"
+        android:textColor="@color/Orange" />
+    <Button
+        android:id="@+id/Send_Button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="Skicka" />
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:layout_gravity="bottom"
+            android:id="@+id/About_Button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="About" />
+        <Button
+            android:layout_gravity="bottom"
+            android:id="@+id/Contact_Button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="Contact" />
+    </LinearLayout>
+</LinearLayout>
